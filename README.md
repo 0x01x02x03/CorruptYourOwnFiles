@@ -6,6 +6,11 @@ I was looking for a simple, offline, free, and many other things, but mainly wit
 
 ![](header.png)
 
+## Screenshots
+![screenshot](https://i.imgur.com/i1sPyLJ.png)
+
+![screenshot](https://i.imgur.com/fDv1lRs.png)
+
 ## Installation
 
 OS X & Linux:
