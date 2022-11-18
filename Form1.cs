@@ -78,11 +78,6 @@ namespace Corrupt_Your_Own_Files
             }
         }
 
-        private void bInfo_Click()
-        {
-
-        }
-
         private void bInfo_Click(object sender, EventArgs e)
         {
             fAbout myNewForm = new fAbout();
