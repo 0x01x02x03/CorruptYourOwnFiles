@@ -5,10 +5,9 @@ namespace Corrupt_Your_Own_Files
 {
     internal static class Program
     {
-        /// <summary>
-        /// Punto de entrada principal para la aplicación.
-        /// </summary>
+        /// <summary>Punto de entrada principal para la aplicación.</summary>
         [STAThread]
+        
         private static void Main()
         {
             Application.EnableVisualStyles();

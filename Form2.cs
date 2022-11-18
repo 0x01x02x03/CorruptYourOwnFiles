@@ -5,6 +5,9 @@ namespace Corrupt_Your_Own_Files
 {
     public partial class fAbout : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="fAbout"/> class.
+        /// </summary>
         public fAbout()
         {
             InitializeComponent();

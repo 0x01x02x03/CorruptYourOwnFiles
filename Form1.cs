@@ -7,12 +7,19 @@ namespace Corrupt_Your_Own_Files
 {
     public partial class fMain : Form
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="fMain"/> class.
+        /// </summary>
         public fMain()
         {
             InitializeComponent();
             UpdateTextPosition();
         }
-
+        /// <summary>
+        /// Handles the Click event of the bFile control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void bFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog oD = new OpenFileDialog
@@ -33,8 +40,10 @@ namespace Corrupt_Your_Own_Files
 
             }
         }
-
-        private void UpdateTextPosition()
+        /// <summary>
+        /// Updates the text position.
+        /// </summary>
+/        private void UpdateTextPosition()
         {
             Graphics g = CreateGraphics();
             double startingPoint = (Width / 2) - (g.MeasureString(Text.Trim(), Font).Width / 2);
@@ -51,6 +60,9 @@ namespace Corrupt_Your_Own_Files
             Text = tmp + Text.Trim();
         }
 
+        /// <summary>Handles the Click event of the bCorrrupt control.</summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void bCorrrupt_Click(object sender, EventArgs e)
         {
             pBar.Value = 0;
@@ -78,6 +90,9 @@ namespace Corrupt_Your_Own_Files
             }
         }
 
+        /// <summary>Handles the Click event of the bInfo control.</summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void bInfo_Click(object sender, EventArgs e)
         {
             fAbout myNewForm = new fAbout();
